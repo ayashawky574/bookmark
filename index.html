@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="bookmark.jpg">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="item" class="text-center w-80 mx-auto mt-4">
+        <div id="hbody" class="w-80 m-auto p-4">
+            <h1 class="position-relative mb-3">Bookmarker</h1>
+        </div>
+        <div class="item2 d-flex flex-column m-auto justify-content-center pt-2 mt-4">
+            <div class="contain p-4">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="inp1 text-start pb-3">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                <label for="site" class="pb-2">Site Name</label>
+                <input type="text" id="site" class="form-control " placeholder="Bookmark Name" required>
+                <div  class=" feedback valid-feedback">
+                    Done!
+                  </div>
+                <div  class=" feedback invalid-feedback">
+                    name must be (4:10) letters only!
+                  </div>
+            </div>
+            <div class="inp2 text-start">
+                <i class="fa-solid fa-link pe-2"></i>
+                <label for="site" class="pb-2">Site URL</label>
+                <input type="text" id="url" class="form-control " placeholder="Website URL" required>
+                <div  class=" feedback valid-feedback">
+                    Done!
+                  </div>
+                <div  class=" feedback invalid-feedback">
+                    url must be ex: (https://www.asdfwea.com) !
+                  </div>
+            </div>
+            <button onclick="addSite()" class="btn btn-danger px-5 my-3 mt-5">Submit</button>
+        </div>
+    </div>
+</div>
+<div
+    class="table-responsive"
+>
+    <table
+        class="table table-light my-5 m-auto text-center"
+    >
+        <thead>
+            <tr>
+                <th >index</th>
+                <th>Website Name</th>
+                <th >Visit</th>
+                <th >Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+           
+           
+        </tbody>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
